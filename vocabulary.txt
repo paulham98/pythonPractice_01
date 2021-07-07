@@ -1,0 +1,6 @@
+cat: 고양이
+temple: 절
+attack: 공격하다
+bicycle: 자전거
+wallet: 지갑
+church: 교회
