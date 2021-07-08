@@ -39,11 +39,13 @@ def check(numbers, winning_numbers):
         return 50000
     elif count_matching_numbers(numbers, winning_numbers) == 3:
         return 5000
+    elif count_matching_numbers(numbers, winning_numbers) == 2 or count_matching_numbers(numbers, winning_numbers) == 1 or count_matching_numbers(numbers, winning_numbers) == 0:
+        return 0
 
 
 # 테스트
 # print(draw_winning_numbers())
 # print(count_matching_numbers([2, 7, 11, 14, 25, 40], [2, 11, 13, 14, 30, 35]))
 # print(count_matching_numbers([2, 7, 11, 14, 25, 40], [14]))
-print(check([2, 4, 11, 14, 25, 40], [4, 12, 14, 28, 40, 41, 6]))
-print(check([2, 4, 11, 14, 25, 40], [2, 4, 10, 11, 14, 40, 25]))
+# print(check([2, 4, 11, 14, 25, 40], [4, 12, 14, 28, 40, 41, 6]))
+# print(check([2, 4, 11, 14, 25, 40], [2, 4, 10, 11, 14, 40, 25]))
